@@ -1,0 +1,113 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+.header
+{
+    padding: 20px 50px;
+    position: relative;
+    z-index: 10;
+}
+.wrapper
+{
+    background-image: url(/Media/Lgoinscreen.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-image: cover ;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+}
+.wrapper::before
+{
+    content: '';
+    background: rgba(0,0,0,.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.login__body{
+    padding: 60px;
+    z-index: 90;
+    position: relative;
+    max-width: 450px;
+    height: 630px;
+    margin-left: 50%;
+    background: rgba(0,0,0,.6);
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: translateX(-50%);
+    left: -800px;
+    top: -50px;
+}
+.login__body h2
+{
+    font-size: 32px;
+    color: white;
+    margin-top: 0;
+}
+.login__body input
+{
+    height: 50px;
+    width: 100%;
+    border-radius: 3px;
+    color: white;
+    background: #333;
+    border: 1px solid #333;
+    padding-left: 15px;
+    box-sizing: border-box;
+    outline: none;
+    transition: all 0.15s ease;
+}
+.login__body input:focus {
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+.input__warp{
+    margin-bottom: 25px;
+}
+.login__body button{
+    height: 50px;
+    width: 100%;
+    color: white;
+    background: #e50914;
+    border-radius: 3px;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid #e50914;
+
+}
+.support{
+    display: flex;
+    color: #b3b3b3;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.support input
+{
+    position: relative;
+    width: 14px;
+    height: 14px;
+    top: 1px;
+}
+.remeber
+{
+    display: flex;
+    align-items: center;
+}
+.remeber span{
+    margin-right: 10px;
+    height: 25px;
+}
+.need__help a
+{
+    text-decoration: none;
+    color: #b3b3b3;
+}
