@@ -1,0 +1,332 @@
+*
+{
+    cursor: url(/_next/static/media/Cursor.bb4d8044.svg),auto;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+    box-sizing: border-box;
+}
+img
+{
+    max-width: 100%;
+}
+body
+{
+    background-color: black;
+    color: #fff;
+    overflow-x: hidden;  
+/* Disable X-ac Scroll*/
+    border: solid 5px black;
+    border-radius: 5px;
+    height: 1550px;
+    width: 1550px;
+}
+header
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 56px;
+    position: absolute;
+    width: 100%;
+    z-index: 5;
+}
+header a.logo
+{
+    display: block;
+
+}
+header.logo svg
+{
+    height: 3px;
+}
+header div+div
+{
+    text-align: left;
+}
+header a.button
+{
+    display: inline-block;
+    background-color: #e50914;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 17px;
+    border-radius: 3px;
+    border-color: black;
+}
+header select
+{
+    background: transparent;
+    color: #fff;
+    padding:6px 30px 6px 0px;
+    border-radius: 3px;
+    margin-left: 30px;
+    background-color: #000;
+}
+header div.select svg
+{
+    height: 20px;
+    fill: #fff;
+    position: absolute;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+header div.select
+{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+div.splash
+{
+    position: relative;
+}
+div.splash div.gradient
+{
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,transparent 60%,rgba(0,0,0,.8));
+    position: absolute;
+    inset: 0;
+}
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+}
+div.splash div.content
+{
+    max-width: 655px;
+    position: absolute;
+    inset: 0;
+    right: 29%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+div.splash h1,div.splash h2,div.splash h4
+{
+    font-weight: normal;
+}
+div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+div.splash h4{
+    font-size: 1.2rem;
+}
+div.splash form{
+    position: relative;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns:max-content 1fr;
+}
+div.splash input{
+    padding: 11.47px;
+    font-size: 1.2rem;
+    width: 100%;
+    border:0;
+}
+div.splash input ~span
+{
+    position: absolute;
+    left: 20px;
+    top: 14px;
+    z-index: 3;
+    color: #aaa;
+    transition: all 0.15s ease;
+    pointer-events: none;
+}
+div.splash input:focus {
+    padding-top: 14px;
+    padding-bottom: 6px;
+}
+div.splash input:focus ~ span{
+    top:2px;
+    font-size: .8rem;
+}
+div.splash button{
+    font-size: 1.625rem;
+    padding: 5.3px 1px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+}
+/* Sections */
+section
+{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:46px;
+    padding:78px 35px;
+    align-items: center;
+    border-top: 8px solid #222;
+}
+section div.texts h1{
+    font-size: 3rem;
+    margin-bottom: 8px;
+}
+section div.texts p {
+    font-size: 1.100rem;
+}
+.media{
+    position: relative;
+    left: -200px;
+}
+.media.s1 img{
+    position:relative; 
+    width: 400px;
+    z-index: 999;
+}
+.media.s1 video
+{
+    width: 293px;
+    height: 300px;
+    position: absolute;
+    top:-5.5px;
+    left: 364.5px;
+    z-index: 2;
+}
+section:nth-child(even) div.texts
+{
+    order: 2;
+}
+
+.media.s2 img.mob{
+    position:relative; 
+    width: 90%;
+    left: 190px;
+}
+
+section div.download
+{
+    border: 2px solid #666 ;
+    border-radius: 15px;
+    padding: 10px;
+    height: 95px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 40px;
+    left: 360px;
+    width: 440px;
+    background-color: #000;
+    grid-template-columns: max-content 1fr max-content;
+}
+section div.download img.cover
+{
+    position:relative; 
+    top:-4px;
+    right: -3px;
+    width:auto;
+    height: 78px
+
+}
+section div.download span.film
+{
+    position: relative;
+    right: -10px;
+    font-size: 15px;
+    bottom: 25px;
+    color: white    ;
+}
+
+section div.download span
+{
+    position: relative;
+    right: -290px;
+    font-size: 12px;
+    bottom: -5px;
+    color: blue;
+}
+section div.download img.downt
+{
+    position:relative; 
+    right:360px;
+    bottom: 75px;
+    width:auto;
+    height: 60px
+}
+section .kids
+{
+    position: relative;
+    height:350px;
+    left: -50px;
+}
+/* Footer */
+footer
+{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-sizing: border-box;
+    height: auto;
+    width: 110vh;
+    font-family: "Open Sans";
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content
+{
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+}
+.footer-content h3
+{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    text-align: left;
+    align-items: left;
+    justify-content: left;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px ;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transform: color .4s ease;
+}
+.socials a:hover i {
+    color: aqua;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
