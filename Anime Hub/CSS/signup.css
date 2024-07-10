@@ -13,7 +13,7 @@
 }
 .wrapper
 {
-    background-image: url(/Media/Lgoinscreen.jpg);
+    background-image: url(../Media/signup-01.jpg);
     background-size: cover;
     height: 100vh;
     background-image: cover ;
@@ -74,7 +74,7 @@
 .input__warp{
     margin-bottom: 25px;
 }
-.login__body button{
+form .login__body .input__warp input{
     height: 50px;
     width: 100%;
     color: white;

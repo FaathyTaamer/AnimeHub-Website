@@ -1,0 +1,353 @@
+<?php
+include '../../HTML/General/conn.php';
+session_start();
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../CSS/Films/filmcss.css">
+    <link rel="stylesheet" href="../../CSS/swiper-bundle.min.css">
+    <link rel="shortcut icon" href="../../img/fav-icon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>AnimeHub - Watch Now</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="nav container">
+            <a href="../../HTML/Film/Main.php" class="logo">
+                Anime<span>Hub</span>
+            </a>
+            <div class="search-box">
+                <span><?php echo $_SESSION['name'] ?></span>
+                <i class='bx bx-user-circle'></i>
+            </div>
+            <!--USERRRRRRRRRRRR-->
+            <a href="" class="user">
+                <img src="../../img/user.jpg" alt="" class="user-img" onclick="toggleMenu()">
+                </a>
+            </div>
+            <div class="navbar">
+                <a href="#" class="nav-link nav-action">
+                    <i class='bx bx-home-alt' ></i>
+                    <span class="nav-link-title">Home</span>
+                </a>
+                <a href="#popular" class="nav-link">
+                    <i class='bx bxs-hot' ></i>
+                    <span class="nav-link-title">Trending</span>
+                </a>
+                <a href="#movies" class="nav-link">
+                    <i class='bx bx-compass' ></i>
+                    <span class="nav-link-title">Explore</span>
+                </a>
+                <a href="../../HTML/General/logout.php" class="nav-link">
+                    <i class='bx bx-log-out'></i>
+                    <span class="nav-link-title">Log-out</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="home container" id="home">
+        <img src="../../Media/wallpaperflare.com_wallpaper.jpg" alt="" class="home-img">
+        <div class="home-text">
+            <h1 class="home-title">
+                DemonSlayer<br>Kimetsu no Yaiba
+            </h1>
+            <p>Releasing 3 January</p>
+            <a href="../../HTML/Film/Esp/Demonslayer.php" class="watch-btn">
+                <i class='bx bx-right-arrow' ></i>
+                <span>Watch The Trailer</span>
+            </a>
+        </div>
+    </section>
+    <section class="popular container" id="popular">
+        <div class="heading">
+            <h2 class="heading-title">Popular Animes</h2>
+            <div class="swiper-btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="popular-content swiper">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- MOVIE 1-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove1.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">DemonSlayer:Kimetsu no Yaiba</h2>
+                                <span class="movie-type">Action - Adventure - Animation</span>
+                                <a href="../../HTML/Film/Esp/Demonslayer.php" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 2-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove2.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">My Hero Academia: Boku no hîrô akademia</h2>
+                                <span class="movie-type">Adventure - Science fantasy - Superhero </span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 3-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove3.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">JuJuStu Kaisen</h2>
+                                <span class="movie-type">Action - Shonen - Supernatural</span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 4-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove4.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">Naruto Shippuden: The Kazekage's Rescue</h2>
+                                <span class="movie-type">Action - Adventures - Comedy - Shonen</span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 5-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove5.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">Attack on Titan
+                                    :Shingeki no Kyojin</h2>
+                                <span class="movie-type">Action - Adventure - Animation</span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 6-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove6.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">Hunter x Hunter
+                                </h2>
+                                <span class="movie-type">Action - Adventure - Animation</span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 7-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove7.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">Death Note
+                                </h2>
+                                <span class="movie-type">Crime - Drama - Fantasy</span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MOVIE 8-->
+                    <div class="swiper-slide">
+                        <div class="movie-box">
+                            <img src="../../Media/popularfilms/popularmove8.jpg" alt="" class="movie-box-img">
+                            <div class="box-text">
+                                <h2 class="box-title">Tokyo Revengers
+                                </h2>
+                                <span class="movie-type">Action - Drama - Animation</span>
+                                <a href="" class="watch-btn play-btn">
+                                    <i class='bx bx-right-arrow' ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="movies container" id="movies">
+        <div class="heading">
+            <h2 class="heading-title">Movies And Shows</h2>
+        </div>
+        <div class="movies-content">
+            <!-- MOVIE 1-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BMDdlYmMyZTQtODY1Zi00ZWZhLWJmYzQtMzJjYzBlODIwODRlXkEyXkFqcGdeQXVyMTI1NTgzODgw._V1_SX700-371x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">Summer Ghost 2021
+                        </h2>
+                        <span class="movie-type">Drama - Short  </span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 2-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BMjEwOTA2Y2YtM2ZiYS00OGFlLTg0NDQtZTM2NDQxMDRiZWFmXkEyXkFqcGdeQXVyMTQzMzU5MDg5._V1_SX700-388x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">Black Clover
+                        </h2>
+                        <span class="movie-type">Action - Drama</span>
+                        <a href="../../HTML/Film/Esp/BlackClover.php" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 3-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BN2MxMTgzMzgtMTk4ZC00NDgxLTgyZDEtYmQ3MzZlZDc5YTQyXkEyXkFqcGdeQXVyMTA3MTI2ODc5._V1_-393x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">JoJo’s Bizarre Adventure
+                        </h2>
+                        <span class="movie-type">Action - suspense</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 4-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BODY4OWM5M2UtM2Y1Yi00YjAyLTlhMDktMDkzZjFmMjI5MmI5XkEyXkFqcGdeQXVyMTA1NjQyNjkw._V1_SX700-388x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">One Piece Film: Red
+                        </h2>
+                        <span class="movie-type">Action - Adventure</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 5-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BOTU5NWExYzctNjg5NS00NWUzLTg0OTUtY2FjOTg1YzUzYjRjXkEyXkFqcGdeQXVyMTI0ODg2OTM3._V1_SX700-390x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">Detective Conan Movie 25: Halloween
+                        </h2>
+                        <span class="movie-type">Action - Crime</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 6-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BY2IwNjM0ODktYTZkNy00ZTA0LWEzMWYtMDE3ZDg0YmI3YzQ3XkEyXkFqcGdeQXVyMTEzMTI1Mjk3._V1_SX700-371x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">The Witcher
+                        </h2>
+                        <span class="movie-type">Action - Animation</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 7-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BYjY3MTNmMDQtMTlmZi00MmQ4LTg3YjQtNmEzMjFhNTk2OGFiXkEyXkFqcGdeQXVyNzEyMDQ1MDA@._V1_-393x550 (1).jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">Shoujo Kageki Revue Starlight 
+                        </h2>
+                        <span class="movie-type">Drama - Animation</span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOVIE 8-->
+            <div class="swiper-slide">
+                <div class="movie-box">
+                    <img src="../../Film Media/MV5BYmMwZGRlNDYtZDdmYy00MzBjLTg4NmItNTU5NzFiMDRkMDc4XkEyXkFqcGdeQXVyMTU0OTM5ODc1._V1_SX700-375x550.jpg" alt="" class="movie-box-img">
+                    <div class="box-text">
+                        <h2 class="box-title">Spy x Family
+                        </h2>
+                        <span class="movie-type">Action - Drama </span>
+                        <a href="" class="watch-btn play-btn">
+                            <i class='bx bx-right-arrow' ></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="next-page">
+        <a href="../../HTML/Film/nextpage.php" class="next-btn">Next Page</a>
+    </div>
+<div class="copyright">
+    <p>copyright &copy; 2022 v233Team</p>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="../../JAVA/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    },
+    pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    },
+    navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+    },
+});
+</script>
+</body>
+</html>
